@@ -1,0 +1,29 @@
+<%- include('todo') -%>
+
+    <div class="text-center center-div mt-5" id="login">
+        <div class="todo-container">
+            <h1>Welcome
+                <%=locals.user ? user : "User" %>
+            </h1>
+            <a href="/route/logout">Logout</a>
+            <h2>To Do List</h2>
+            <div class="todo">
+                <form action="/addtask" method="POST" class="todo-header">
+                    <input type="text" name="content">
+                    <button type="submit"><span class="fas fa-plus"></span></button>
+                </form>
+                <ul class="todo-list">
+                    <li class="todo-list-item">
+                        <div class="todo-list-item-name">Some Text</div>
+                        <a href="" class="edit">
+                            <span class="fas fa-edit"></span>
+                        </a>
+                        <a href="" class="remove">
+                            <span class="fas fa-times"></span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <%- include('footer') -%>

@@ -5,3 +5,5 @@ This is the project demonstrate login express app created with node and express.
 ``` npm install ```
 
 This command will install all the dependancy in the project.
+
+Sir padelete na lang po nung docx after niyo po mabasa para po magrun ung project
